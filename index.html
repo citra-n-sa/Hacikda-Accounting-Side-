@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hacikda Accounting — Jasa Pembukuan untuk UMKM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topbar">Menerima klien UMKM baru bulan ini</div>
+
+    <header class="masthead">
+      <a href="#top" class="brand" aria-label="Hacikda Accounting"><img src="IMG/Desain_tanpa_judul_page-0001-removebg-preview.png" alt="Hacikda Accounting" /></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    </header>
+    <nav id="nav" class="nav" aria-label="Menu utama">
+      <a href="#tentang">Tentang</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#tim">Tim</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media">
+          <!-- Foto permanen: tambahkan data-src="img/foto-hero.jpg" -->
+          <div class="photo-slot framed" data-label="-"></div>
+        </div>
+        <div class="hero-text">
+          <h1>Catatan usaha rapi, keuangan UMKM jadi jelas</h1>
+          <p>Kami bantu pelaku UMKM mencatat transaksi, menyusun laporan keuangan, dan memahami kondisi usahanya.</p>
+          <a class="btn" href="#kontak">Konsultasi sekarang</a>
+        </div>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track"><span>Rapi</span><i>&#9670;</i><span>Mudah dipahami</span><i>&#9670;</i><span>Teratur</span><i>&#9670;</i><span>Terjangkau</span><i>&#9670;</i></div>
+      </div>
+
+      <section class="split" id="tentang">
+        <div class="split-left">
+          <h2>Hacikda hadir untuk UMKM yang masih kesulitan mengatur keuangan</h2>
+          <p>Hacikda Accounting adalah usaha jasa yang membantu UMKM mengelola pencatatan dan keuangan usaha lewat layanan sederhana: pembukuan transaksi, penyusunan laporan keuangan, dan konsultasi keuangan.</p>
+          <p>Tujuannya agar pencatatan usaha menjadi lebih rapi, mudah dipahami, dan teratur, dengan biaya yang terjangkau.</p>
+        </div>
+        <div class="split-right">
+          <img src="IMG/Desain_tanpa_judul_page-0001-removebg-preview.png" alt="Logo Hacikda Accounting" class="split-logo" />
+        </div>
+      </section>
+
+      <section class="how" id="layanan">
+        <h2 class="center">Layanan kami</h2>
+        <p class="center lead">Pilih layanan sesuai kebutuhan usahamu. Semua bisa dipakai sendiri-sendiri.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Keuangan Rutin</h3>
+            <p class="price">Rp 150.000<small>per bulan</small></p>
+            <a class="btn" href="#kontak" data-layanan="Keuangan Rutin">Pilih layanan</a>
+          </article>
+          <article class="card">
+            <h3>Pembukuan</h3>
+            <p class="price">Rp 175.000<small>per bulan</small></p>
+            <a class="btn" href="#kontak" data-layanan="Pembukuan">Pilih layanan</a>
+          </article>
+          <article class="card">
+            <h3>Konsultasi Keuangan Usaha</h3>
+            <p class="price">Rp 200.000<small>per sesi</small></p>
+            <a class="btn" href="#kontak" data-layanan="Konsultasi Keuangan Usaha">Pilih layanan</a>
+          </article>
+          <article class="card">
+            <h3>Penyusunan Laporan Keuangan</h3>
+            <p class="price">Rp 250.000<small>per bulan</small></p>
+            <a class="btn" href="#kontak" data-layanan="Penyusunan Laporan Keuangan">Pilih layanan</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="team" id="tim">
+        <h2 class="center">Tim Hacikda</h2>
+        <p class="center lead">Struktur tim yang mendampingi pembukuan usahamu.</p>
+        <img src="IMG/Biru dan Ungu Kasual Perusahaan Teknologi Bagan Organisasi (1).png" alt="Struktur organisasi Hacikda Accounting" class="org" />
+      </section>
+
+      <section class="contact" id="kontak">
+        <h2>Mulai konsultasi</h2>
+        <form id="contact-form" novalidate>
+          <label class="sr-only" for="nama">Nama</label>
+          <input id="nama" type="text" placeholder="Nama" autocomplete="name" required />
+          <label class="sr-only" for="layanan">Layanan</label>
+          <select id="layanan">
+            <option>Keuangan Rutin</option>
+            <option>Pembukuan</option>
+            <option>Konsultasi Keuangan Usaha</option>
+            <option>Penyusunan Laporan Keuangan</option>
+          </select>
+          <label class="sr-only" for="alamat email">Alamat Email</label>
+          <input id="email" type="text" placeholder="Keterangan lainnya (Opsional)" autocomplete="email" required />
+          <button class="btn btn-gold" type="submit">Kirim lewat Email</button>
+        </form>
+        <p id="form-msg" class="form-msg" role="status"></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <img src="IMG/Desain_tanpa_judul_page-0001-removebg-preview.png" alt="Hacikda Accounting" class="footer-logo" />
+        <div class="fcol">
+          <h4>Tentang</h4>
+          <a href="#tentang">Siapa kami</a><a href="#tim">Tim</a>
+        </div>
+        <div class="fcol">
+          <h4>Layanan</h4>
+          <a href="#layanan">Pembukuan</a><a href="#layanan">Laporan keuangan</a><a href="#layanan">Konsultasi</a>
+        </div>
+        <div class="fcol">
+          <h4>Kontak</h4>
+          <a href="#kontak">Kirim pesan</a>
+        </div>
+      </div>
+      <div class="legal">
+        <span>Hacikda Accounting</span>
+        <!-- <span>&copy; <span id="year"></span> Hacikda Accounting. Hak cipta dilindungi.</span> -->
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
